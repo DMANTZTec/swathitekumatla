@@ -1,0 +1,215 @@
+package json;
+import java.io.FileWriter;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+public class amazon
+{
+    public static void main(String args[])
+    {    //dealers
+         JSONObject d1 = new JSONObject();
+         d1.put("dealerId",new Integer(1));
+         d1.put("dealerName", "Sai");    
+         d1.put("daddr", "chennai");
+
+         JSONObject d2 = new JSONObject();
+         d2.put("dealerId",new Integer(2));
+         d2.put("dealerName", "Ram");    
+         d2.put("daddr", "kolkata");
+          
+         JSONObject d3 = new JSONObject();
+         d3.put("dealerId",new Integer(3));
+         d3.put("dealerName", "Shiva");    
+         d3.put("daddr", "delhi");
+      
+         JSONArray da = new JSONArray();
+         da.add(d1);
+         da.add(d2);
+         da.add(d3);
+
+         //users
+         JSONObject u1 = new JSONObject();
+         u1.put("uid",new Integer(4));
+         u1.put("uname", "vasanth");    
+         u1.put("uemail", "dwqe@gmail.com");
+         u1.put("uaddr", "bangalore");
+         u1.put("uno", "+91 9156276545");
+         
+         JSONObject u2 = new JSONObject();
+         u2.put("uid",new Integer(5));
+         u2.put("uname", "kumar");    
+         u2.put("uemail", "tyyfby@gmail.com");
+         u2.put("uaddr", "mumbai");
+         u2.put("uno", "+91 9987267783");
+          
+         JSONObject u3 = new JSONObject();
+         u3.put("uid",new Integer(6));
+         u3.put("uname", "kannah");    
+         u3.put("uemail", "khu@yahoo.com");
+         u3.put("uaddr", "rangareddy");
+         u3.put("uno", "+91 7896504534");
+      
+         JSONArray ua = new JSONArray();
+         ua.add(u1);
+         ua.add(u2);
+         ua.add(u3);
+
+         //sde
+         JSONObject sde1 = new JSONObject();
+         sde1.put("name", "cdc");
+         sde1.put("experience",new Integer(3));  
+ 
+         JSONObject sde2 = new JSONObject();
+         sde2.put("name", "ams");
+         sde2.put("experience",new Integer(2));           
+
+         JSONObject sde3 = new JSONObject();
+         sde3.put("name", "per");
+         sde3.put("experience",new Integer(5));
+ 
+         JSONArray sdea = new JSONArray();
+         sdea.add(sde1);
+         sdea.add(sde2);
+         sdea.add(sde3);
+
+         //network engg
+         JSONObject ne1 = new JSONObject();
+         ne1.put("name", "rfd");
+         ne1.put("experience", new Integer(10));  
+ 
+         JSONObject ne2 = new JSONObject();
+         ne2.put("name", "yhg");
+         ne2.put("experience", new Integer(7));           
+
+         JSONObject ne3 = new JSONObject();
+         ne3.put("name", "veb");
+         ne3.put("experience", new Integer(5));
+ 
+         JSONArray nea = new JSONArray();
+         nea.add(ne1);
+         nea.add(ne2);
+         nea.add(ne3);
+
+         //cloud engg
+         JSONObject ce1 = new JSONObject();
+         ce1.put("name", "rrr");
+         ce1.put("experience", new Integer(3));  
+ 
+         JSONObject ce2 = new JSONObject();
+         ce2.put("name", "kgf");
+         ce2.put("experience", new Integer(4));           
+
+         JSONObject ce3 = new JSONObject();
+         ce3.put("name", "avg");
+         ce3.put("experience", new Integer(6));
+ 
+         JSONArray cea = new JSONArray();
+         cea.add(ce1);
+         cea.add(ce2);
+         cea.add(ce3);
+
+         //guards
+         JSONObject gd1 = new JSONObject();
+         gd1.put("name", "que");
+         gd1.put("experience", new Integer(8));  
+ 
+         JSONObject gd2 = new JSONObject();
+         gd2.put("name", "tgg");
+         gd2.put("experience", new Integer(4));           
+
+         JSONObject gd3 = new JSONObject();
+         gd3.put("name", "ariel");
+         gd3.put("experience", new Integer(9));
+ 
+         JSONArray gda = new JSONArray();
+         gda.add(gd1);
+         gda.add(gd2);
+         gda.add(gd3);
+         
+         JSONObject gd = new JSONObject();
+         gd.put("gd",gda);
+
+         //cleaners
+         JSONObject cl1 = new JSONObject();
+         cl1.put("name", "yhg");
+         cl1.put("experience", new Integer(2));  
+ 
+         JSONObject cl2 = new JSONObject();
+         cl2.put("name", "zfsf");
+         cl2.put("experience", new Integer(4));           
+
+         JSONObject cl3 = new JSONObject();
+         cl3.put("name", "xxx");
+         cl3.put("experience", new Integer(6));
+ 
+         JSONArray cla = new JSONArray();
+         cla.add(cl1);
+         cla.add(cl2);
+         cla.add(cl3);
+         
+         JSONObject cl = new JSONObject();
+         cl.put("cl",cla);
+
+         //packers
+         JSONObject pk1 = new JSONObject();
+         pk1.put("name", "mla");
+         pk1.put("experience", new Integer(5));  
+ 
+         JSONObject pk2 = new JSONObject();
+         pk2.put("name", "ndd");
+         pk2.put("experience", new Integer(3));           
+e
+         JSONObject pk3 = new JSONObject();
+         pk3.put("name", "ojy");
+         pk3.put("experience", new Integer(7));
+ 
+         JSONArray pka = new JSONArray();
+         pka.add(pk1);
+         pka.add(pk2);
+         pka.add(pk3);
+         
+         JSONObject pk = new JSONObject();
+         pk.put("pk",pka);
+
+         //technicians
+         JSONObject t = new JSONObject();
+         t.put("sde",sdea);
+         t.put("networkEngg",nea);
+         t.put("cloudEngg",cea);
+
+         //service workers
+         JSONArray swa = new JSONArray();
+         swa.add(gd);
+         swa.add(cl);
+         swa.add(pk);
+         
+         JSONObject sw = new JSONObject();
+         sw.put("serviceWorkers",swa);
+         
+         //employee
+         JSONArray empa = new JSONArray();
+         empa.add(t);
+         empa.add(sw);
+
+         //amazon
+         JSONObject az = new JSONObject();
+         az.put("dealers",da);
+         az.put("users",ua);
+         az.put("employee",empa);
+
+         JSONObject a = new JSONObject();
+         a.put("amazon",az);
+         
+        try(FileWriter file= new FileWriter("amazonData.json"))
+        {
+        	 file.write(a.toString());
+        	 file.flush();
+        	 file.close();
+        } 
+        catch (Exception e)
+        {
+        	e.printStackTrace();
+        }
+         System.out.print(a);
+    }
+}
