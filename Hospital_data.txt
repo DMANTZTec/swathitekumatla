@@ -1,0 +1,141 @@
+{
+    "hospital": {
+        "name": "Sunrise Hospital",
+        "address": {
+            "city": "Hayathnagar",
+            "Street no": "123 Ntr colony",
+            "District": "Telangana",
+            "state": "Telanagna",
+            "zipcode": "500007",
+            "phone": "(555) 123-4567"
+        }
+    },
+    "Patients": [
+        {
+            "name": "Anupama",
+            "age": 40,
+            "Gender": "Female",
+            "phone no": 9390475584,
+            "Address": {
+                "Village": "Gopalraopet",
+                "Mandal": "Gangadhara",
+                "District": "Karimnagar",
+                "Pincode": 500531
+            },
+            "Appointment": {
+                "Doctor": "DR.Jaganath",
+                "Date": "27.09.2023",
+                "time": "3:00pm",
+                "Reason": "Heart Checkup"
+            }
+        },
+        {
+            "name": "Swathi",
+            "age": 22,
+            "Gender": "Female",
+            "phone no": 9390475584,
+            "Address": {
+                "Village": "Velmakanne",
+                "Mandal": "Munugode",
+                "District": "Nalgonda",
+                "Pincode": 508253
+            },
+            "Appointment": {
+                "Doctor": "DR.Subhashini",
+                "Date": "29.09.2023",
+                "time": "10:30Am",
+                "Reason": "Stomach Pain"
+            }
+        }
+    ],
+    "Doctors": [
+        {
+            "Id": 124,
+            "doctor_name": "Dr.Subhashini",
+            "Designation": "Gastroenterologists",
+            "Availability": {
+                "Monday": "8:30am - 5:30pm",
+                "Wednesday": "1:30pm - 7:30pm",
+                "Thrusday": "10am - 8pm",
+                "Friday": "9am - 12pm"
+            },
+            "Phone no": 876542986,
+            "Email": "subhadoctor@gmail.com",
+            "Reviews": [
+                {
+                    "name": "suji",
+                    "rating": 5,
+                    "comments": "Very good doctor.",
+                    "feedback": {
+                        "staff": 5,
+                        "punctual": 5,
+                        "Food": 5,
+                        "cleanliness": 5
+                    }
+                },
+                {
+                    "name": "sravani",
+                    "rating": 5,
+                    "comments": "Very Good",
+                    "attributes": {
+                        "staff": 5,
+                        "punctual": 5,
+                        "Food": 5,
+                        "cleanliness": 5
+                    }
+                }
+            ]
+        },
+        {
+            "Id": 456,
+            "doctor_name": "Dr.Jaganath",
+            "Designation": "Cardiologists",
+            "Availability": {
+                "Monday": "9:00am - 5:30pm",
+                "Wednesday": "3:00pm - 7:30pm",
+                "Thrusday": "10am - 8:30pm",
+                "Friday": "9am - 12:30pm"
+            },
+            "Phone no": 987654328,
+            "Email": "jaganathdoctor@gmail.com",
+            "Reviews": [
+                {
+                    "name": "naresh",
+                    "rating": 4.5,
+                    "comments": "Cool Doctor.",
+                    "feedback": {
+                        "staff": 4.5,
+                        "punctual": 5,
+                        "Food": 5,
+                        "cleanliness": 5
+                    }
+                },
+                {
+                    "name": "Ammu",
+                    "rating": 4.5,
+                    "comments": "Friendly Doctor",
+                    "attributes": {
+                        "staff": 4.5,
+                        "punctual": 4.5,
+                        "Food": 5,
+                        "cleanliness": 5
+                    }
+                }
+            ],
+            "Medical Records": [
+                {
+                    "date": "27-09-2023",
+                    "doctor": "Dr. Jganath",
+                    "diagnosis": "NO Problem in heart",
+                    "prescription": "fluids, and over-the-counter medication"
+                },
+                {
+                    "date": "29-09-2023",
+                    "doctor": "Dr. Subhashini",
+                    "diagnosis": "Gas Problem",
+                    "prescription": "Rest,Fruits,and leavy Vegetables"
+                }
+            ]
+        }
+    ]
+}
