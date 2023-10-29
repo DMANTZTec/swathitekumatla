@@ -22,7 +22,7 @@ public class Bank {
         
         BankOperations test=new BankOperations() ;
         test.addAmount(swathi, 1000);
-       //test.debitAmount(vamshi, 23000);
+       test.debitAmount(vamshi, 23000);
         test.transferAmount(swathi, vamshi, 200);
         
 	}
